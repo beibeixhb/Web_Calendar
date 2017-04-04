@@ -1,0 +1,15 @@
+Basic functionalities:
+(1) Events can be added, modified and deleted
+(2) Events have a title, date and time
+(3) Easy users and events management
+
+Security:
+(1) Passwords are stored salted and encrypted
+(2) Safe from XSS attacks
+(3) Safe from SQL injection attacks
+(4) CSRF tokens are passed when editing or removing events
+
+Snippet functionalities:
+(1) Users can tag an event with a particular category and enable/disable those tags in the calendar view
+(2) In my calendar, registered user can view the events by the type of events (study, play, shopping and personal)
+(3) My calendar can display how many days the event’s date is before or after the present date, and if the event is less than 5 days from today, the content will be displayed in red, which means emergency and if the event is greater then 5 days but less than 15 days from today, the text will be displayed in yellow, if the event is greater than 15 days from now, the text will be displayed in blue
