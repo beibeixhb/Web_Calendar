@@ -1,0 +1,13 @@
+create table event
+(
+id INT NOT NULL AUTO_INCREMENT,
+username VARCHAR(100) NOT NULL,
+date_of_event DATE NOT NULL,
+beginTime TIME,
+endTime TIME,
+content VARCHAR(100) NOT NULL,
+category VARCHAR(100),
+tag VARCHAR(100),
+primary key (id),
+foreign key (username) references userinfo (username)
+);
